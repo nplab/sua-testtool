@@ -1,4 +1,4 @@
-# SUA Testtool
+# SUA Testtool and Testsuite
 A test tool for SUA as specified in [RFC 3868](https://tools.ietf.org/html/rfc3868)
 and the ETSI specification
 [ETSI TS 102 143](http://www.etsi.org/deliver/etsi_ts/102100_102199/102143/01.01.01_60/ts_102143v010101p.pdf).
