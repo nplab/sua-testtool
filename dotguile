@@ -29,8 +29,8 @@
 (define dir "/Users/tuexen/Documents/sua-testtool/")
 (define files (list "common.scm"
                     "sua.scm"
-                    "sua-asp-tests.scm"
-                    "sua-sgp-tests.scm"
                     "sua-param-testtool-asp.scm"
-                    "sua-param-testtool-sgp.scm"))
+                    "sua-param-testtool-sgp.scm"
+                    "sua-asp-tests.scm"
+                    "sua-sgp-tests.scm"))
 (map (lambda (file) (load-from-path (string-append dir file))) files)
