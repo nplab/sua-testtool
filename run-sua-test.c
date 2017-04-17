@@ -97,9 +97,11 @@ main(int argc, char *argv[]) {
 	}
 
 	if ((pid = fork()) == 0) {
-		execlp("/usr/local/bin/guile", "guile",
-		       "-c", command,
-		       (char *)0);
+#if defined(__APPLE__) || defined(__FreeBSD__)
+		execlp("/usr/local/bin/guile", "guile", "-c", command, NULL);
+#else
+		execlp("/usr/bin/guile", "guile", "-c", command, NULL);
+#endif
 		fprintf(stderr, "%s\n", "Couln't start guile.");
 	}
 	printf("Test %-40.40s ", argv[optind]);
