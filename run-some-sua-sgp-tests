@@ -1,4 +1,4 @@
-#!/usr/bin/env tcsh
+#!/usr/bin/env sh
 #
 # Copyright (c) 2011 Michael Tuexen
 # All rights reserved.
@@ -27,9 +27,10 @@
 # $Id: run-some-sua-sgp-tests,v 1.3 2011/03/20 16:53:06 tuexen Exp $
 #
 
-set timeout = 10
-set testcases = ( )
+timeout=10
+testcases=
 
-foreach testcase ($testcases)
-  (runm3uatest -t $timeout $testcase > /dev/tty) >& /dev/null
-end
+for testcase in $testcases
+do
+  runm3uatest -t $timeout $testcase 2> /dev/null
+done
