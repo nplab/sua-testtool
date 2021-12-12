@@ -28,9 +28,11 @@
 #
 
 timeout=10
+sleeptime=1
 testcases=
 
 for testcase in $testcases
 do
   runm3uatest -t $timeout $testcase 2> /dev/null
+  sleep $sleeptime
 done
