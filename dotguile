@@ -26,7 +26,7 @@
 ;;; $Id: dotguile,v 1.1 2011/03/20 16:48:30 tuexen Exp $
 
 ;;; Change the following line to reflect where the files are located.
-(define dir "/Users/tuexen/Documents/sua-testtool/")
+(define dir "")
 (define files (list "common.scm"
                     "sua.scm"
                     "sua-param-testtool-asp.scm"
